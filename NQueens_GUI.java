@@ -69,45 +69,6 @@ public class NQueens_GUI extends Thread{
                     catch(InterruptedException  E){} 
                 }
             }});   
-        /*    show.addKeyListener(new KeyListener(){
-                public void keyPressed(KeyEvent e){
-                    if(e.getKeyCode()==KeyEvent.VK_ENTER){
-                        n=Integer.parseInt(jtxt.getText());
-                jf2=new JFrame("Placing Queens...");
-                jf2.setSize(600,600);
-                jf2.setSize(30*(n+1),30*(n+1));
-                jf2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                jp.setLayout(new GridLayout(n,n));
-                jp.setSize(500,500);
-                int size=400/n;
-                jb=new JButton[n][n];
-                for(int t=0;t<n;t++) for(int j=0;j<n;j++) {jb[t][j]=new JButton();
-                        jb[t][j].setSize(size,size);
-                    }
-                for(int t=0;t<n;t++){
-                    for(int j=0;j<n;j++){
-                        if((t+j)%2==1){
-                            jb[t][j].setBackground(Color.black);
-                        }
-                        else
-                            jb[t][j].setBackground(Color.white);
-                        jb[t][j].setText("  ");
-                        jp.add(jb[t][j]);
-                    }
-                }    jp.setVisible(true);
-                try{ t2.sleep(500);
-                    jp.setSize(400,400);
-                    t2.sleep(200);
-                    jf.add(jp);
-                    jf.setBackground(Color.cyan);
-               }
-                catch(InterruptedException  E){}
-            }
-        }
-          public void keyReleased(KeyEvent e){}
-          public void keyTyped(KeyEvent e){}
-      
-        });     */
         while(n==0){
             try{
                 //this.sleep(200);
